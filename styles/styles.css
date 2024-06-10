@@ -1,0 +1,126 @@
+:root {
+    --primary-color: #52796F;
+    --secondary-color: #354F52;
+    --accent-color: #4DD7FA;
+    --text-dark: #2F3E46;
+    --text-light: #d4d4d4;
+    --primary-font: monospace;
+    --secondary-font: ;
+}
+
+/* General Changes */
+body {
+    font-family: var(--primary-font);
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+#bar {
+    height: 2px;
+    background-color: #000000;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.dot {
+    /* Fix the dots */
+    height: 25px;
+    width: 25px;
+    background-color: #000000;
+    border-radius: 50%;
+}
+
+/* Top Bar */
+header {
+    display: flex;
+    background-color: var(--primary-color);
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+#portrait {
+    max-width: 200px;
+    margin-left: 20px;
+}
+
+.nav-button {
+    padding: 10px;
+    background-color: #2F3E46;
+    color: var(--text-light);
+    margin: 0 100px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 1.5em;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .60);
+}
+
+.nav-button:hover {
+    color: #4DD7FA;
+}
+
+/* Center Section */
+#resume-container {
+    margin: 50px auto;
+    background-color: var(--text-light);
+    width: 900px;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, .30);
+}
+
+#projects, #experience, #education {
+    max-width: 90%;
+}
+
+#info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#info-right {
+    text-align: end;
+}
+
+.job p {
+    margin-bottom: 0px;
+}
+
+.job h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.job ul {
+    margin-top: 10px;
+}
+
+li {
+    margin: 5px 0;
+}
+
+/* Footer Bar */
+footer {
+    background-color: var(--primary-color);
+    height: 150px;
+}
+
+footer a {
+    margin: 5px;
+}
+
+.card {
+    width: 100px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .60);
+    margin-top: 25px;
+    margin-left: 50px;
+}
