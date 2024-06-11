@@ -35,6 +35,12 @@ h1 {
     border-radius: 50%;
 }
 
+#active-tab {
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--accent-color);
+}
+
 /* Top Bar */
 header {
     display: flex;
@@ -71,7 +77,7 @@ nav {
 #resume-container {
     margin: 50px auto;
     background-color: var(--text-light);
-    width: 900px;
+    width: 700px;
     padding: 30px 40px;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, .30);
@@ -110,7 +116,7 @@ li {
 /* Footer Bar */
 footer {
     background-color: var(--primary-color);
-    height: 150px;
+    height: 100px;
 }
 
 footer a {
@@ -118,9 +124,9 @@ footer a {
 }
 
 .card {
-    width: 100px;
+    width: 50px;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, .60);
     margin-top: 25px;
-    margin-left: 50px;
+    margin-left: 20px;
 }
