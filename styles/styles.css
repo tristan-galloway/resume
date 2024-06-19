@@ -27,10 +27,16 @@ h1 {
     margin-bottom: 20px;
 }
 
-.dot {
-    /* Fix the dots */
-    height: 25px;
-    width: 25px;
+.break {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.circle {
+    text-align: center;
+    height: 10px;
+    width: 10px;
     background-color: #000000;
     border-radius: 50%;
 }
@@ -54,7 +60,7 @@ nav {
 }
 
 #portrait {
-    max-width: 200px;
+    max-width: 100px;
     margin-left: 20px;
 }
 
@@ -94,6 +100,10 @@ nav {
 
 #info-right {
     text-align: end;
+}
+
+#experience h2 {
+    margin-top: 10px;
 }
 
 .job p {
