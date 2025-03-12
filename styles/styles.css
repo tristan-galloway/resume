@@ -52,18 +52,19 @@ header {
     display: flex;
     background-color: var(--primary-color);
 }
-
 nav {
     display: flex;
     flex-direction: row;
     margin: auto;
+}
+main {
+    margin: 0 auto;
 }
 
 #portrait {
     max-width: 100px;
     margin-left: 20px;
 }
-
 .nav-button {
     padding: 10px;
     background-color: #2F3E46;
@@ -74,7 +75,6 @@ nav {
     font-size: 1.5em;
     box-shadow: 0 0 5px rgba(0, 0, 0, .60);
 }
-
 .nav-button:hover {
     color: #4DD7FA;
 }
@@ -88,37 +88,29 @@ nav {
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, .30);
 }
-
 #projects, #experience, #education {
     max-width: 90%;
 }
-
 #info {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-
 #info-right {
     text-align: end;
 }
-
 #experience h2 {
     margin-top: 10px;
 }
-
 .job p {
     margin-bottom: 0px;
 }
-
 .job h3 {
     margin-top: 0;
     margin-bottom: 5px;
 }
-
 .job ul {
     margin-top: 10px;
 }
-
 li {
     margin: 5px 0;
 }
@@ -128,9 +120,49 @@ footer {
     background-color: var(--primary-color);
     height: 100px;
 }
-
 footer a {
     margin: 5px;
+}
+
+/* Project Page */
+
+/* Repo List Section */
+#repo-list {
+    margin: 0 auto;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+#repo-list li {
+    background: #1e1e2e; /* Dark mode style */
+    color: #fff;
+    border-radius: 8px;
+    padding: 16px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out;
+}
+#repo-list li:hover {
+    transform: scale(1.05);
+}
+#repo-list a {
+    color: #62dafb; /* GitHub blue */
+    text-decoration: none;
+    font-size: 18px;
+}
+#repo-list a:hover {
+    text-decoration: underline;
+}
+#repo-list p {
+    margin: 8px 0 0;
+    font-size: 14px;
+}
+#repo-list p:last-child {
+    font-size: 12px;
+    color: #bbb;
 }
 
 .card {
