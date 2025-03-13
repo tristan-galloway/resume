@@ -1,16 +1,11 @@
+import { fetchGitHubRepos, filterRepos, displayRepos } from "../scripts/utilities.js"
+
+// Main function to load and process GitHub repositories
 async function loadGitHubRepos() {
-    const username = "tristan-galloway";
-    const response = await fetch(`https://api.github.com/users/${username}/repos`);
-    const repos = await response.json();
-    
-    const repoList = document.getElementById("repo-list");
-    repoList.innerHTML = repos.map(repo => `
-        <li>
-            <strong><a href="${repo.html_url}" target="_blank">${repo.name}</a></strong>
-            <p>${repo.description || "No description available"}</p>
-            <p>⭐ ${repo.stargazers_count} | 🔧 ${repo.language || "Unknown"}</p>
-        </li>
-    `).join("");
+    const featuredRepos = ["blacksmith_shop", "game-scope", "ExpenseTracker", "fitness_tracker", "LibraryCatalogSystem"]; // Define your featured repos here
+    const repos = await fetchGitHubRepos();
+    const filteredRepos = filterRepos(repos, featuredRepos);
+    displayRepos(filteredRepos);
 }
 
-loadGitHubRepos();
+loadGitHubRepos()
